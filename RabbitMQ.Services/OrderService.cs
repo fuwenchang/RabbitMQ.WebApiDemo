@@ -25,7 +25,7 @@ namespace RabbitMQ.Services
             _rabbitProducer.Publish(RabbitConstant.DELAY_EXCHANGE, RabbitConstant.DELAY_ROUTING_KEY,
                 new Dictionary<string, object>()
                 {
-                    { "x-delay",1000*20}
+                    { "x-delay",1000*2}
                 },message);
         }
 
