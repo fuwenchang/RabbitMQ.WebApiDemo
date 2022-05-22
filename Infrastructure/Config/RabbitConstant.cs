@@ -17,4 +17,12 @@ namespace Infrastructure.Config
         public const string DEAD_LETTER_QUEUE = "dead.letter.queue";
         public const string DEAD_LETTER_ROUTING_KEY = "dead.letter.routing.key";
     }
+
+
+    public class RabbitQueueConfig 
+    {
+        public string Exchange { get; set; }
+        public string RoutingKey { get; set; }
+        public string Queue { get; set; }
+    }
 }

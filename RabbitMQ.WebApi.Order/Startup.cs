@@ -35,7 +35,7 @@ namespace RabbitMQ.WebApi.Order
             });
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IRabbitProducer,RabbitProducer>();
-            services.AddSingleton<IHostedService, ProcessPay>();
+            //services.AddSingleton<IHostedService, ProcessPay>();
             services.AddSingleton<IHostedService, ProcessPayTimeout>();
             services.AddSingleton<IPayService, PayService>();
             services.ConfigureCors();

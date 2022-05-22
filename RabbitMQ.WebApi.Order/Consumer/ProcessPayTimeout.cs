@@ -14,6 +14,14 @@ using Infrastructure.Message;
 
 namespace RabbitMQ.WebApi.Order
 {
+    /// <summary>
+    /// 应用场景
+    /// 订单在十分钟之内未支付则自动取消。
+    /// 新创建的店铺，如果在十天内都没有上传过商品，则自动发送消息提醒。
+    /// 用户注册成功后，如果三天内没有登陆则进行短信提醒。
+    /// 用户发起退款，如果三天内没有得到处理则通知相关运营人员。
+    /// 预定会议后，需要在预定的时间点前十分钟通知各个与会人员参加会议。
+    /// </summary>
     public class ProcessPayTimeout : IHostedService
     {
         private readonly RabbitConnection _connection;

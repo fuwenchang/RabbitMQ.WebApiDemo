@@ -25,11 +25,11 @@ namespace RabbitMQ.Services
             _rabbitProducer.Publish(RabbitConstant.DELAY_EXCHANGE, RabbitConstant.DELAY_ROUTING_KEY,
                 new Dictionary<string, object>()
                 {
-                    { "x-delay",1000*2}
-                },message);
+                    { "x-delay",1000*5}
+                }, message);
         }
 
-        private OrderMessage GetOrderMessage() 
+        private OrderMessage GetOrderMessage()
         {
             OrderInfo orderInfo = new OrderInfo();
             orderInfo.GoodsCount = 1;
@@ -53,7 +53,7 @@ namespace RabbitMQ.Services
         public void SendTestMessage(string message)
         {
             Console.WriteLine($"send message:{message}");
-            _rabbitProducer.Publish(RabbitConstant.TEST_EXCHANGE,"",new Dictionary<string,object>(),message);
+            _rabbitProducer.Publish(RabbitConstant.TEST_EXCHANGE, "", new Dictionary<string, object>(), message);
         }
     }
 }

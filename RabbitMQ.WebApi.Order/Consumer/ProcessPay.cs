@@ -23,6 +23,7 @@ namespace RabbitMQ.WebApi.Order
     ///     
     /// 要注入，在StartUp.cs中
     /// </remarks>
+    [Obsolete("可不用消费待过期的队列，一定时间后，如果是延迟队列，会进入死信队列，直接消费死信队列（如十分钟后，看用户有没有上传过新的产品）")]
     public class ProcessPay : IHostedService
     {
         private readonly RabbitConnection _connection;
