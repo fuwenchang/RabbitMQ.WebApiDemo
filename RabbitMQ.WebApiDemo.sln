@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.WebApi.Order", "RabbitMQ.WebApi.Order\RabbitMQ.WebApi.Order.csproj", "{4AB3B4C1-42EB-4913-817D-0F4C122FA30C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{FFE0E85E-31F8-4422-846A-687A7DA838C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Services", "RabbitMQ.Services\RabbitMQ.Services.csproj", "{76176452-3BA0-4837-90D8-33050A00AFB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Entities", "RabbitMQ.Entities\RabbitMQ.Entities.csproj", "{95BC8DF2-BF47-4731-9006-8D99F927AF97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Consumer", "Consumer", "{7619EB0C-C0F0-4BB7-9E63-918FC9B3D541}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Pay", "RabbitMQ.Pay\RabbitMQ.Pay.csproj", "{73790033-3EB4-4CD9-9AAE-5A12B29D5235}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Pay.Timeout", "RabbitMQ.Pay.Timeout\RabbitMQ.Pay.Timeout.csproj", "{EBCBE701-5603-408B-AAD2-62BA93EC6107}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AB3B4C1-42EB-4913-817D-0F4C122FA30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB3B4C1-42EB-4913-817D-0F4C122FA30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB3B4C1-42EB-4913-817D-0F4C122FA30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB3B4C1-42EB-4913-817D-0F4C122FA30C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFE0E85E-31F8-4422-846A-687A7DA838C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFE0E85E-31F8-4422-846A-687A7DA838C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFE0E85E-31F8-4422-846A-687A7DA838C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFE0E85E-31F8-4422-846A-687A7DA838C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76176452-3BA0-4837-90D8-33050A00AFB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76176452-3BA0-4837-90D8-33050A00AFB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76176452-3BA0-4837-90D8-33050A00AFB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76176452-3BA0-4837-90D8-33050A00AFB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95BC8DF2-BF47-4731-9006-8D99F927AF97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95BC8DF2-BF47-4731-9006-8D99F927AF97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95BC8DF2-BF47-4731-9006-8D99F927AF97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95BC8DF2-BF47-4731-9006-8D99F927AF97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73790033-3EB4-4CD9-9AAE-5A12B29D5235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73790033-3EB4-4CD9-9AAE-5A12B29D5235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73790033-3EB4-4CD9-9AAE-5A12B29D5235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73790033-3EB4-4CD9-9AAE-5A12B29D5235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBCBE701-5603-408B-AAD2-62BA93EC6107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBCBE701-5603-408B-AAD2-62BA93EC6107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBCBE701-5603-408B-AAD2-62BA93EC6107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBCBE701-5603-408B-AAD2-62BA93EC6107}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{73790033-3EB4-4CD9-9AAE-5A12B29D5235} = {7619EB0C-C0F0-4BB7-9E63-918FC9B3D541}
+		{EBCBE701-5603-408B-AAD2-62BA93EC6107} = {7619EB0C-C0F0-4BB7-9E63-918FC9B3D541}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FDC9A00-D556-4DCA-982C-89ED1CCCED27}
+	EndGlobalSection
+EndGlobal
