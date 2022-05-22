@@ -14,6 +14,7 @@ using Infrastructure.Message;
 
 namespace RabbitMQ.Pay.Timeout
 {
+    [Obsolete("已废弃，移动到RabbitMQ.WebApi.Order项目中")]
     public class ProcessPayTimeout : IHostedService
     {
         private readonly RabbitConnection _connection;

@@ -14,6 +14,7 @@ using RabbitMQ.Services;
 
 namespace RabbitMQ.Pay
 {
+    [Obsolete("已废弃，移动到RabbitMQ.WebApi.Order项目中")]
     public class ProcessPay : IHostedService
     {
         private readonly RabbitConnection _connection;
